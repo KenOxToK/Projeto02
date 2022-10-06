@@ -8,7 +8,10 @@ namespace AgendasSalas
 {
     public class Horario
     {
+        //TODO: colocar os métodos da classe como private e, se necessário o acesso de fora, criar os públicos com get e set
         DateTime _inicio;
         DateTime _fim;
+
+        //TODO: criar construtor
     }
 }

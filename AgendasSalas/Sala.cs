@@ -8,6 +8,8 @@ namespace AgendasSalas
 {
     public class Sala
     {
+
+        //TODO: colocar os métodos da classe como private e, se necessário o acesso de fora, criar os públicos com get e set
         int _id;
         string _identificacao;
         string _descricao;
@@ -20,8 +22,11 @@ namespace AgendasSalas
         bool _temArCondicionado;
         bool _temSeguro;
 
-        public Sala(int id, string identificacao, string descricao, int voltagem, int numeroMaximoDePessoas, int janelas, Endereco localizacao, bool temBanheiro, bool temEstacionamento, bool temArCondicionado, bool temSeguro)
+        //alguna parâmetros podem ter valor padrão pra facilitar a criação e só colocar o que for adicional
+        //fiz o exemplo
+        public Sala(int id, string identificacao, string descricao, Endereco localizacao, int numeroMaximoDePessoas, int voltagem = 110, int janelas = 0, bool temBanheiro = false, bool temEstacionamento = false, bool temArCondicionado = false, bool temSeguro = false)
         {
+            //TODO: gerar id incremental ou aleatório ao invés de receber como parâmetro
             _id = id;
             _identificacao = identificacao;
             _descricao = descricao;
@@ -35,6 +40,7 @@ namespace AgendasSalas
             _temSeguro = temSeguro;
         }
 
+        //TODO: tirar o get de quem não vai poder ser alterado de fora
         public int Id { get => _id; set => _id = value; }
         public string Identificacao { get => _identificacao; set => _identificacao = value; }
         public string Descricao { get => _descricao; set => _descricao = value; }

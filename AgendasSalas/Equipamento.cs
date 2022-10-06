@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AgendasSalas
 {
+    //mesma coisa que falei na de objetos
     public class Equipamento
     {
         string _nome;
