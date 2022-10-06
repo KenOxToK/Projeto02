@@ -8,6 +8,7 @@ namespace AgendasSalas
 {
     enum DiaSemana
     {
+        //TODO: colocar os métodos da classe como private e, se necessário o acesso de fora, criar os públicos com get e set
         Domingo = 1,
         Segunda_Feira = 2,
         Terca_Feira = 3,
@@ -16,6 +17,8 @@ namespace AgendasSalas
         Sexta_Feira = 6,
         Sabado = 7
     }
+
+    //essa classe ainda vamos ver como fazemos e talvez nem precise dela
     class Periodo
     {
         DiaSemana diaSemana;

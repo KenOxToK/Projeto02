@@ -8,6 +8,7 @@ namespace AgendasSalas
 {
     public class Objetos
     {
+        //TODO: colocar os métodos da classe como private 
         int _id;
         string _nome;
         string _descricao;

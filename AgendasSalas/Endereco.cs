@@ -8,6 +8,7 @@ namespace AgendasSalas
 {
     public class Endereco
     {
+        //TODO: colocar os métodos da classe como private 
         string _logradouro;
         string _bairro;
         string _numero;
