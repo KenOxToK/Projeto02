@@ -15,11 +15,11 @@
             Console.WriteLine("-Horario das 9h a 12 ou 13h a 16h");           
             Console.WriteLine("-Sala com Seguro por 30$");
             Console.WriteLine("-Sala com Estacionamento por 10$");
-            Console.WriteLine("-Temos equipamento em Ar-Condicionado,Mesas de reunião,Cadeiras,Televisão,Iluminação,tapetes e mais.");
             Console.WriteLine("-Sala com Ar Condicionado por 20$");
             Console.WriteLine("-Sala com Banheiro por 15$");
             Console.WriteLine("-Sala com Janela por 10$");
             Console.WriteLine("-Sala de Voltagem: 110V ou 220V");
+            Console.WriteLine("-Temos equipamento em Ar-Condicionado,Mesas de reunião,Cadeiras,Televisão,Iluminação,tapetes e mais.");
             Console.WriteLine("♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦");
             Console.WriteLine("");
 
