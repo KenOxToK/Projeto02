@@ -9,9 +9,9 @@ namespace AgendasSalas
     public class Cliente
     {      
         //TODO: colocar os métodos da classe como private 
-        string _nome;
-        string _email;
-        string _celular;
+        private string _nome;
+        private string _email;
+        private string _celular;
 
         public Cliente( string nome, string email, string celular)
         {
