@@ -11,7 +11,7 @@
             ;
             Console.WriteLine("                           ♦Menu♦                          ");
 
-            Console.WriteLine("-Dia de Semanas por Segunda-Feira, Quarta-Feira e Sexta-Feira ");
+            Console.WriteLine("-Dia de Semanas por Segunda-Feira a Domingo");
             Console.WriteLine("-Horario das 9h a 12 ou 13h a 16h");           
             Console.WriteLine("-Sala com Seguro por 30$");
             Console.WriteLine("-Sala com Estacionamento por 10$");
@@ -24,8 +24,9 @@
             Console.WriteLine("");
 
             Console.WriteLine("Deseja em cadastrar este aluguel de sala?(Sim ou Não)");
-            string cliente = (Console.ReadLine());
+            string deseja = (Console.ReadLine());
             Console.WriteLine("");
+
             Console.WriteLine("Qual é o seu nome?");
             string nome = (Console.ReadLine());
             Console.WriteLine("");
