@@ -28,3 +28,11 @@ C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6
 /home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/ref/AgendasSalas.dll
 /home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.pdb
 /home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.genruntimeconfig.cache
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.csproj.AssemblyReference.cache
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.AssemblyInfoInputs.cache
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.AssemblyInfo.cs
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.dll
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\refint\AgendasSalas.dll
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.pdb

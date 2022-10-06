@@ -9,10 +9,11 @@ namespace AgendasSalas
     public class Endereco
     {
         //TODO: colocar os métodos da classe como private 
-        string _logradouro;
-        string _bairro;
-        string _numero;
-        string _complemento;
+        //
+        private string _logradouro;
+        private string _bairro;
+        private string _numero;
+        private string _complemento;
 
         public Endereco(string logradouro, string bairro, string numero, string complemento)
         {

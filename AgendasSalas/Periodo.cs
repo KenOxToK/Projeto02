@@ -17,13 +17,49 @@ namespace AgendasSalas
         Sexta_Feira = 6,
         Sabado = 7
     }
+    public class Periodo
+    {
+        private int numero;
+        // Coloquei this por isso ter usar list
+        public Periodo(int numero)
+        {
+            this.numero = numero;
+        }
+
+        public int Numero { get => numero; set => numero = value; }
+       
+        // Não sei porquê 
+        // Erro por dm ( Dia semana )
+        // Talvez eu não lembro deve criar metedo.
+        public DiaSemana dm (int semana)
+        {
+            if (semana == 1)
+                return DiaSemana.Domingo;
+            if (semana == 2)
+                return DiaSemana.Segunda_Feira;
+            if (semana == 3)
+                return DiaSemana.Terca_Feira;
+            if (semana == 4)
+                return DiaSemana.Quinta_Feira;
+            if (semana == 5)
+                return DiaSemana.Quinta_Feira;
+            if (semana == 6)
+                return DiaSemana.Sexta_Feira;
+            if (semana == 7)
+                return DiaSemana.Sabado;
+            else
+                return.0;
+        }
+    }
+
+
 
     //essa classe ainda vamos ver como fazemos e talvez nem precise dela
-    class Periodo
-    {
-        DiaSemana diaSemana;
-        Horario _horarios;
-        float _preco;
-        bool _estaAtiva;
-    }
+    //class Periodo
+    //{
+    //    DiaSemana diaSemana;
+    //    Horario _horarios;
+    //    float _preco;
+    //    bool _estaAtiva;
+    //}
 }
