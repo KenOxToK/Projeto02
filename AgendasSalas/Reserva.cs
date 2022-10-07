@@ -25,28 +25,34 @@ namespace AgendasSalas
             _salaAlugada = salaAlugada;
             _equipamentos = equipamentos;
             _servicos = servicos;
-            this._objetos = objetos;
-            
+            this._objetos = objetos;           
         }
 
         //TODO: adicionar cliente
-        public Reserva (string nome,string email,string celular)
+        public Reserva (string nome, string email, string celular)
         {
-            _cliente = new Cliente("", "", "");
+            _cliente = new Cliente(nome,email,celular);
         }
 
         // uma variável booleana para indicar se a reserva está efetuada
         private bool _efetuada = false;
 
         //TODO: criar construtor recebendo os parametros de sala e período
-
+        public Reserva (int id, string identificacao, string descricao, ref List<Periodo> periodos, Endereco localizacao, int numeroMaximoDePessoas, int voltagem = 110, int janelas = 0, bool temBanheiro = false, bool temEstacionamento = false, bool temArCondicionado = false, bool temSeguro = false)
+        {
+            _sala = new Sala(id, identificacao, descricao, localizacao, numeroMaximoDePessoas, voltagem, janelas, temBanheiro, temEstacionamento, temArCondicionado, temSeguro);
+            _periodo = periodos;
+        }
         //TODO: criar método pra adicionar objetos e serviços             
         //public Reserva(string nome, string _descricao)
         //{
         //    _objetos = new Objetos("","","");
-
         //}
-
+        public Reserva(int id, string nome, string descricao,float custo)
+        {
+            _servicos = new Servico("","","");
+            _objetos = new Objetos("","","");
+        }
         public bool FazerContratacao()
         {
             //TODO: verificar se o período está disponível para a sala escolhida,

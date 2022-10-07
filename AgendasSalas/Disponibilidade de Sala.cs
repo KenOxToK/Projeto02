@@ -19,17 +19,10 @@ namespace AgendasSalas
         public List<Periodo> Periodo { get => _periodo; set => _periodo = value; }
 
         //TODO: criar construtor
-        public Disponibilidade_de_Sala(ref List<Periodo> periodo)
+        public Disponibilidade_de_Sala(int id, string identificacao, string descricao, ref List<Periodo> periodos,  Endereco localizacao, int numeroMaximoDePessoas, int voltagem = 110, int janelas = 0, bool temBanheiro = false, bool temEstacionamento = false, bool temArCondicionado = false, bool temSeguro = false )
         {
-            _periodo = periodo;
-        }
-        private Periodo Find(string nomePeriodo)
-        {
-            Periodo produto = null;
-            foreach (Periodo p in _periodo)
-            {
-            }
-            return produto;
+            _sala = new Sala(id, identificacao, descricao, localizacao, numeroMaximoDePessoas, voltagem, janelas, temBanheiro, temEstacionamento, temArCondicionado, temSeguro);
+            _periodo = periodos;
         }
 
 
