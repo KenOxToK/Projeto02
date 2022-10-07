@@ -41,11 +41,11 @@ namespace AgendasSalas
         //TODO: criar construtor recebendo os parametros de sala e período
 
         //TODO: criar método pra adicionar objetos e serviços             
-        public Reserva(string nome, string _descricao)
-        {
-            _objetos = new Objetos("","","");
+        //public Reserva(string nome, string _descricao)
+        //{
+        //    _objetos = new Objetos("","","");
 
-        }
+        //}
 
         public bool FazerContratacao()
         {

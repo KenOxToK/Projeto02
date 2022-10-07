@@ -20,7 +20,7 @@ namespace AgendasSalas
     public class Periodo
     {
         private int numero;
-        // Coloquei this por isso ter usar list
+       
         public Periodo(int numero)
         {
             this.numero = numero;
@@ -28,27 +28,28 @@ namespace AgendasSalas
 
         public int Numero { get => numero; set => numero = value; }
        
-        // Não sei porquê 
-        // Erro por dm ( Dia semana )
+ 
+        // Erro por ds ( Dia semana )
         // Talvez eu não lembro deve criar metedo.
-        public DiaSemana dm (int semana)
+        public int Dias (int dsemana) // DS = Dia Semana // dsemana = Dia Semana 
         {
-            if (semana == 1)
-                return DiaSemana.Domingo;
-            if (semana == 2)
-                return DiaSemana.Segunda_Feira;
-            if (semana == 3)
-                return DiaSemana.Terca_Feira;
-            if (semana == 4)
-                return DiaSemana.Quinta_Feira;
-            if (semana == 5)
-                return DiaSemana.Quinta_Feira;
-            if (semana == 6)
-                return DiaSemana.Sexta_Feira;
-            if (semana == 7)
-                return DiaSemana.Sabado;
+            if (dsemana == 1)
+                return (int) DiaSemana.Domingo;
+            if (dsemana == 2)
+                return (int) DiaSemana.Segunda_Feira;
+            if (dsemana == 3)
+                return (int) DiaSemana.Terca_Feira;
+            if (dsemana == 4)
+                return (int) DiaSemana.Quinta_Feira;
+            if (dsemana == 5)
+                return (int) DiaSemana.Quinta_Feira;
+            if (dsemana == 6)
+                return (int) DiaSemana.Sexta_Feira;
+            if (dsemana == 7)
+                return (int) DiaSemana.Sabado;
             else
-                return.0;
+                return 0;
+           
         }
     }
 
