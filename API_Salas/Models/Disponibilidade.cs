@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Alunos.Models
 {
-    public class Disponbilidade
+    public class Disponibilidade
     {
         [ForeignKey("Salas")]
         public int cods { get; set; }

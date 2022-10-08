@@ -14,23 +14,32 @@ namespace API_Professores.Controllers {
             _context = context;
         }
 
-        // [HttpGet]
-        // public ActionResult<IEnumerable<Cliente>> Get() {
-        //     var clientes = _context.Professores.ToList();
-        //     if (clientes is null) {
-        //         return NotFound();
-        //     }
-        //     return Ok(clientes);
-        // }
+        public AppDbContext Get_context()
+        {
+            return _context;
+        }
 
-        // [HttpGet("{id:int}", Name = "ObterProfessor")]
-        // public ActionResult<Cliente> Get(int id) {
-        //     var cliente = _context.clientes.FirstOrDefault(p => p.ClienteId == id);
-        //     if (cliente is null) {
-        //         return NotFound("Professor não encontrado...");
-        //     }
-        //     return cliente;
-        // }
+        [HttpGet]
+        public ActionResult<IEnumerable<Horario>> Get(AppDbContext _context)
+        {
+            var horarios = _context.Horarios.ToList();
+            if (horarios is null)
+            {
+                return NotFound();
+            }
+            return Ok();
+        }
+
+        [HttpGet("{id:int}", Name = "ObterHorario")]
+        public ActionResult<Horario> Get(int id)
+        {
+            var horarios = _context.Horarios.FirstOrDefault(p => p.codh == id);
+            if (horarios is null)
+            {
+                return NotFound("Horario não encontrado...");
+            }
+            return horarios;
+        }
 
         [HttpPost]
         public ActionResult Post(Horario horario) {
@@ -40,34 +49,38 @@ namespace API_Professores.Controllers {
             _context.Horarios.Add(horario);
             _context.SaveChanges();
 
-            return new CreatedAtRouteResult("ObterProfessor",
+            return new CreatedAtRouteResult("ObterHorario",
                 new { id = horario.codh }, horario);
         }
 
-        // [HttpPut("{id:int}")]
-        // public ActionResult Put(int id, Cliente cliente) {
-        //     if (id != cliente.ClienteId) {
-        //         return BadRequest();
-        //     }
+        [HttpPut("{id:int}")]
+        public ActionResult Put(int id, Horario horario)
+        {
+            if (id != horario.codh)
+            {
+                return BadRequest();
+            }
 
-        //     _context.Entry(cliente).State = EntityState.Modified;
-        //     _context.SaveChanges();
+            _context.Entry(horario).State = EntityState.Modified;
+            _context.SaveChanges();
 
-        //     return Ok(cliente);
-        // }
+            return Ok(horario);
+        }
 
-        // [HttpDelete("{id:int}")]
-        // public ActionResult Delete(int id) {
-        //     var cliente = _context.Clientes.FirstOrDefault(p => p.ClienteId == id);
-        //     //var professor = _context.Professores.Find(id);            
+        [HttpDelete("{id:int}")]
+        public ActionResult Delete(int id)
+        {
+            var horario = _context.Horarios.FirstOrDefault(p => p.codh == id);
+            //var professor = _context.Professores.Find(id);            
 
-        //     if (cliente is null) {
-        //         return NotFound("Professor não localizado...");
-        //     }
-        //     _context.Clientes.Remove(cliente);
-        //     _context.SaveChanges();
+            if (horario is null)
+            {
+                return NotFound("Horario não localizado...");
+            }
+            _context.Horarios.Remove(horario);
+            _context.SaveChanges();
 
-        //     return Ok(cliente);
-        // }
+            return Ok(horario);
+        }
     }
 }
