@@ -8,7 +8,7 @@ GO
 use LocacaoSalas;
 GO
 
-CREATE TABLE Endereco(
+CREATE TABLE Enderecos(
 codend integer,
 logradouro varchar(60) not null,
 bairro varchar(30),
@@ -34,43 +34,42 @@ temBanheiro bit,
 temEstacionamento bit,
 temArCondicionado bit,
 PRIMARY KEY (cods),
-FOREIGN KEY(codend) REFERENCES Endereco
+FOREIGN KEY(codend) REFERENCES Enderecos
 );
 
-CREATE TABLE Horario(
+CREATE TABLE Horarios(
 codh integer,
 inicio time,
 fim time,
 PRIMARY KEY(codh)
 );
 
-CREATE TABLE Periodo(
+CREATE TABLE Periodos(
 codp integer,
 codh integer,
 diaSemana date,
-horario time,
 preco numeric(20),
-estaAtiva varchar(3) not null,
+estaAtiva bit,
 PRIMARY KEY (codp),
-FOREIGN KEY(codh) REFERENCES Horario
+FOREIGN KEY(codh) REFERENCES Horarios
 );
 
-CREATE TABLE Reserva(
+CREATE TABLE Reservas(
 codr integer,
-codc integer,
+cods integer,
 salaReservada varchar(30),
 PRIMARY KEY(codr),
-FOREIGN KEY(codc) REFERENCES Reserva
+FOREIGN KEY(cods) REFERENCES Salas
 );
 
-CREATE TABLE Disponibilidade(
+CREATE TABLE Disponibilidades(
 cods integer,
 codp integer,
 FOREIGN KEY(cods) REFERENCES Salas,
-FOREIGN KEY(codp) REFERENCES Periodo
+FOREIGN KEY(codp) REFERENCES Periodos
 );
 
-CREATE TABLE Cliente(
+CREATE TABLE Clientes(
 codc integer,
 nome varchar (100) not null,
 email varchar (100) not null,
@@ -92,24 +91,24 @@ custoTotal numeric(20),
 custoSeguro numeric(20),
 custoHora numeric(20),
 PRIMARY KEY (code),
-FOREIGN KEY(codr) REFERENCES Reserva
+FOREIGN KEY(codr) REFERENCES Reservas
 );
 
-CREATE TABLE MateriaisEscritorio(
+CREATE TABLE MateriaisEscritorios(
 codme integer,
-nome varchar(100) not null,
+nome varchar(100),
 quantidade numeric(5),
 PRIMARY KEY(codme)
 );
 
-CREATE TABLE Limpeza(
+CREATE TABLE Limpezas(
 codl integer,
 tipo varchar(40),
 descricao varchar(100)
 PRIMARY KEY(codl)
 );
 
-CREATE TABLE CoffeBreak(
+CREATE TABLE CoffeeBreaks(
 codcb integer,
 tipo varchar(50),
 nome varchar(80) not null,
@@ -118,14 +117,14 @@ recheio varchar(50),
 PRIMARY KEY(codcb)
 );
 
-CREATE TABLE Impressao(
+CREATE TABLE Impressoes(
 codi integer,
 descricao varchar(100),
 custo numeric(10),
 PRIMARY KEY(codi)
 );
 
-CREATE TABLE Servico(
+CREATE TABLE Servicos(
 codcb integer,
 codme integer,
 codl integer,
@@ -135,11 +134,11 @@ codserv numeric(5) not null,
 descricao varchar (100) not null,
 custo numeric(20),
 PRIMARY KEY(codserv),
-FOREIGN KEY(codl) REFERENCES Limpeza,
-FOREIGN KEY(codme) REFERENCES MateriaisEscritorio,
-FOREIGN KEY(codcb) REFERENCES CoffeBreak,
-FOREIGN KEY(codi) REFERENCES Impressao,
-FOREIGN KEY(codr) REFERENCES Reserva
+FOREIGN KEY(codl) REFERENCES Limpezas,
+FOREIGN KEY(codme) REFERENCES MateriaisEscritorios,
+FOREIGN KEY(codcb) REFERENCES CoffeeBreaks,
+FOREIGN KEY(codi) REFERENCES Impressoes,
+FOREIGN KEY(codr) REFERENCES Reservas
 )
 
 
