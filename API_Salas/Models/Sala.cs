@@ -25,13 +25,6 @@ namespace API_Alunos.Models {
         public string temEstacionamento { get; set; }
 
         [StringLength(3)]
-        public string temArCondicionado { get; set; }
-        // public int celular { get; set; }
-
-        // public int cpf { get; set; }
-
-        // public int cnpj { get; set; }
-
-
+        public string temArCondicionado { get; set; }    
     }
 }
