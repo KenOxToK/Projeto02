@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace API_Alunos.Models {
-    public class Clientes {
+    public class Cliente {
         [Key]        
-        public int codC { get; set; }
+        public int codcli { get; set; }
 
         [Required]
         [StringLength(100)]
