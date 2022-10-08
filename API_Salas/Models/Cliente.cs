@@ -12,11 +12,11 @@ namespace API_Alunos.Models {
         [StringLength(100)]
         public string email { get; set; }
 
-        public int celular { get; set; }
+        public decimal celular { get; set; }
 
-        public int cpf { get; set; }
+        public decimal cpf { get; set; }
 
-        public int cnpj { get; set; }
+        public decimal cnpj { get; set; }
 
 
     }

@@ -6,18 +6,18 @@ Checklist:
  
 – [X] Cadastrar os clientes interessados.  
 
-– [ ] Cadastrar os equipamentos que podem ou não ser utilizados na sala.  
+– [X] Cadastrar os equipamentos que podem ou não ser utilizados na sala.  
 
 – [ ] Cadastrar os recursos que podem ser colocados ou não na sala no momento da
 utilização, por exemplo: iluminação, planos de fundo, objetos de decoração, etc.  
 
-– [ ] Cadastrar os serviços que podem ser executados dentro de uma sala, por exemplo,
+– [X] Cadastrar os serviços que podem ser executados dentro de uma sala, por exemplo,
 café da manhã, outras comidas, apresentações e palestras ou até mesmo um
 atendimento especializado por um profissional qualificado.  
 
 – [ ] Consulta, marcação e pagamento da reserva do horário para a utilização da sala.  
 
-– [ ] Consultar horários disponíveis.  
+– [X] Consultar horários disponíveis.  
 
 – [ ] O cliente pode cancelar o agendamento ou reagendar um horário.  
 

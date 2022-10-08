@@ -27,7 +27,7 @@ namespace API_Professores.Controllers {
         //obter informação específica peça chave primária
         [HttpGet("{id:int}", Name = "ObterServico")]
         public ActionResult<Servico> Get(int id) {
-            var servico = _context.Servicos.FirstOrDefault(p => p.id == id);
+            var servico = _context.Servicos.FirstOrDefault(p => p.codserv == id);
             if (servico is null) {
                 return NotFound("servico não encontrado...");
             }
@@ -44,13 +44,13 @@ namespace API_Professores.Controllers {
             _context.SaveChanges();
 
             return new CreatedAtRouteResult("ObterServico",
-                new { id = servico.id }, servico);
+                new { id = servico.codserv }, servico);
         }
 
         //edita a informação no banco de dados
         [HttpPut("{id:int}")]
         public ActionResult Put(int id, Servico servico) {
-            if (id != servico.id) {
+            if (id != servico.codserv) {
                 return BadRequest();
             }
 
@@ -63,7 +63,7 @@ namespace API_Professores.Controllers {
         //apaga a informação do banco de dados
         [HttpDelete("{id:int}")]
         public ActionResult Delete(int id) {
-            var servico = _context.Servicos.FirstOrDefault(p => p.id == id);
+            var servico = _context.Servicos.FirstOrDefault(p => p.codserv == id);
             //var professor = _context.Professores.Find(id);            
 
             if (servico is null) {
