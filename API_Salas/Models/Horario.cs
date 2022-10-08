@@ -1,22 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace API_Alunos.Models {
-    public class Clientes {
+    public class Horario {
         [Key]        
-        public int codC { get; set; }
+        public int codh { get; set; }
 
         [Required]
-        [StringLength(100)]
-        public string nome { get; set; }
+        public DateTime inicio { get; set; }
 
-        [StringLength(100)]
-        public string email { get; set; }
+        [Required]
+        public DateTime fim { get; set; }
 
-        public int celular { get; set; }
-
-        public int cpf { get; set; }
-
-        public int cnpj { get; set; }
 
 
     }
