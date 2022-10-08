@@ -3,7 +3,7 @@
 namespace API_Alunos.Models {
     public class Clientes {
         [Key]        
-        public int codC { get; set; }
+        public int codc { get; set; }
 
         [Required]
         [StringLength(100)]

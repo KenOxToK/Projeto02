@@ -10,8 +10,5 @@ namespace API_Alunos.Models {
 
         [Required]
         public DateTime fim { get; set; }
-
-
-
     }
 }
