@@ -4,7 +4,7 @@ Checklist:
 
 – [ ] Possibilidade de cadastras fotos da sala.   
  
-– [ ] Cadastrar os clientes interessados.  
+– [X] Cadastrar os clientes interessados.  
 
 – [ ] Cadastrar os equipamentos que podem ou não ser utilizados na sala.  
 

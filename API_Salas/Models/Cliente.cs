@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace API_Alunos.Models {
-    public class Clientes {
+    public class Cliente {
         [Key]        
         public int codc { get; set; }
 
