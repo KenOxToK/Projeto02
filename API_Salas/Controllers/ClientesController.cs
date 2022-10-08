@@ -25,7 +25,7 @@ namespace API_Professores.Controllers {
 
         [HttpGet("{id:int}", Name = "ObterCliente")]
         public ActionResult<Cliente> Get(int id) {
-            var cliente = _context.Clientes.FirstOrDefault(p => p.codcli == id);
+            var cliente = _context.Clientes.FirstOrDefault(p => p.codc == id);
             if (cliente is null) {
                 return NotFound("cliente não encontrado...");
             }
@@ -41,12 +41,12 @@ namespace API_Professores.Controllers {
             _context.SaveChanges();
 
             return new CreatedAtRouteResult("ObterCliente",
-                new { id = cliente.codcli }, cliente);
+                new { id = cliente.codc }, cliente);
         }
 
         [HttpPut("{id:int}")]
         public ActionResult Put(int id, Cliente cliente) {
-            if (id != cliente.codcli) {
+            if (id != cliente.codc) {
                 return BadRequest();
             }
 
@@ -58,7 +58,7 @@ namespace API_Professores.Controllers {
 
         [HttpDelete("{id:int}")]
         public ActionResult Delete(int id) {
-            var cliente = _context.Clientes.FirstOrDefault(p => p.codcli == id);
+            var cliente = _context.Clientes.FirstOrDefault(p => p.codc == id);
             //var professor = _context.Professores.Find(id);            
 
             if (cliente is null) {
