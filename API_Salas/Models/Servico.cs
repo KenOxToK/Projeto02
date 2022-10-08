@@ -4,11 +4,12 @@ namespace API_Alunos.Models
 {
     public class Servico
     { 
-        [Required]       
+        [Key]       
         public int id { get; set; }
          
         [StringLength(100)]
         public string descricao { get; set; }
-        public int custo { get; set; }
+
+        public decimal custo { get; set; }
     }
 }
