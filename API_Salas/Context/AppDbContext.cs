@@ -13,5 +13,6 @@ namespace API_Alunos.Context {
         public DbSet<Endereco>? Enderecos { get; set; }
         // public DbSet<Disponibilidade>? Disponibilidades { get; set; }   
         public DbSet<Servico>? Servicos { get; set; }
+        public DbSet<Reserva>? Reservas { get; set; }
     }
 }
