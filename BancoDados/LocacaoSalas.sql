@@ -54,17 +54,11 @@ PRIMARY KEY (codp),
 FOREIGN KEY(codh) REFERENCES Horarios
 );
 
-CREATE TABLE Reservas(
-codr integer,
-cods integer,
-salaReservada varchar(30),
-PRIMARY KEY(codr),
-FOREIGN KEY(cods) REFERENCES Salas
-);
-
 CREATE TABLE Disponibilidades(
+codd integer,
 cods integer,
 codp integer,
+PRIMARY KEY(codd),
 FOREIGN KEY(cods) REFERENCES Salas,
 FOREIGN KEY(codp) REFERENCES Periodos
 );
@@ -81,7 +75,6 @@ PRIMARY KEY(codc)
 
 CREATE TABLE Equipamentos (
 code integer,
-codr integer,
 nome varchar(40) not null,
 descricao varchar (100) not null,
 voltagemVolts numeric(3),
@@ -90,14 +83,13 @@ volume smallint,
 custoTotal numeric(20),
 custoSeguro numeric(20),
 custoHora numeric(20),
-PRIMARY KEY (code),
-FOREIGN KEY(codr) REFERENCES Reservas
+PRIMARY KEY (code)
 );
 
 CREATE TABLE MateriaisEscritorios(
 codme integer,
 nome varchar(100),
-quantidade numeric(5),
+quantidade numeric(10),
 PRIMARY KEY(codme)
 );
 
@@ -106,6 +98,13 @@ codl integer,
 tipo varchar(40),
 descricao varchar(100)
 PRIMARY KEY(codl)
+);
+
+CREATE TABLE Objetos(
+codob integer,
+nome varchar(50),
+descricao varchar(100)
+PRIMARY KEY(codob)
 );
 
 CREATE TABLE CoffeeBreaks(
@@ -125,12 +124,12 @@ PRIMARY KEY(codi)
 );
 
 CREATE TABLE Servicos(
+codserv integer,
 codcb integer,
 codme integer,
 codl integer,
 codi integer,
-codr integer,
-codserv numeric(5) not null, 
+codob integer, 
 descricao varchar (100) not null,
 custo numeric(20),
 PRIMARY KEY(codserv),
@@ -138,8 +137,24 @@ FOREIGN KEY(codl) REFERENCES Limpezas,
 FOREIGN KEY(codme) REFERENCES MateriaisEscritorios,
 FOREIGN KEY(codcb) REFERENCES CoffeeBreaks,
 FOREIGN KEY(codi) REFERENCES Impressoes,
-FOREIGN KEY(codr) REFERENCES Reservas
+FOREIGN KEY(codob) REFERENCES Objetos
+);
+
+CREATE TABLE Reservas(
+codr integer,
+codd integer,
+code integer,
+codserv integer,
+codob integer,
+valorTotal numeric(6),
+reservaEfetuada bit,
+PRIMARY KEY(codr),
+FOREIGN KEY(codd) REFERENCES Disponibilidades,
+FOREIGN KEY(code) REFERENCES Equipamentos,
+FOREIGN KEY(codserv) REFERENCES Servicos,
+FOREIGN KEY(codob) REFERENCES Objetos
 )
+
 
 
 
