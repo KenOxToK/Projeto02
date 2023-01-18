@@ -1,0 +1,38 @@
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas.exe
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas.deps.json
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas.runtimeconfig.json
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas.dll
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas.pdb
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.csproj.AssemblyReference.cache
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.AssemblyInfoInputs.cache
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.AssemblyInfo.cs
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.csproj.CoreCompileInputs.cache
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.dll
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/refint/AgendasSalas.dll
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.pdb
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.genruntimeconfig.cache
+C:/Users/Pichau/OneDrive/Área de Trabalho/Projeto02/AgendasSalas/obj/Debug/net6.0/ref/AgendasSalas.dll
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas.deps.json
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas.runtimeconfig.json
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas.dll
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/bin/Debug/net6.0/ref/AgendasSalas.dll
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/bin/Debug/net6.0/AgendasSalas.pdb
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.csproj.AssemblyReference.cache
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.GeneratedMSBuildEditorConfig.editorconfig
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.AssemblyInfoInputs.cache
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.AssemblyInfo.cs
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.csproj.CoreCompileInputs.cache
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.dll
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/ref/AgendasSalas.dll
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.pdb
+/home/vitor/Documentos/cesar inova/Projeto02/AgendasSalas/obj/Debug/net6.0/AgendasSalas.genruntimeconfig.cache
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.csproj.AssemblyReference.cache
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.AssemblyInfoInputs.cache
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.AssemblyInfo.cs
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.dll
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\refint\AgendasSalas.dll
+C:\Users\Pichau\OneDrive\Área de Trabalho\Projeto02\AgendasSalas\obj\Debug\net6.0\AgendasSalas.pdb
